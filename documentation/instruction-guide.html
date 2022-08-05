@@ -1,0 +1,2566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <title>Gain POS - Inventory and Sales Management System</title>
+
+    <link rel="shortcut icon" href="images/icon.png"/>
+    <link rel="apple-touch-icon" href="images/icon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          crossorigin="anonymous"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l">
+
+    <!-- Documentation CSS -->
+    <link rel="stylesheet" href="css/documentation.css">
+</head>
+
+<body>
+<div class="d-none" id="top"></div>
+
+<div class="wrapper">
+    <div class="sidebar-wrapper">
+        <div id="menu-toggle" class="toggle-sidebar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="logo-wrapper">
+            <img src="images/logo.png" class="img-fluid" width="250" alt="">
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <!--Introduction-->
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Introduction</a>
+                </li>
+
+                <!--Installation-->
+                <li class="nav-item">
+                    <a href="installation.html" class="nav-link d-flex align-items-center justify-content-between">
+                        Installation
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16"
+                             height="16"
+                             fill="currentColor"
+                             class="bi bi-chevron-down d-none"
+                             viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <ul class="sub-menu d-none">
+                        <li class="sub-menu-item">
+                            <a href="#installation" class="sub-menu-link js-page-scrolling">Server Requirements</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#howToInstall" class="sub-menu-link js-page-scrolling">How to Install</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Quick Start Guide-->
+                <li class="nav-item">
+                    <a href="quick-start-guide.html" class="nav-link">Quick Start Guide</a>
+                </li>
+
+                <!--Instruction Guide-->
+                <li class="nav-item active">
+                    <a href="instruction-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                        Instruction Guide
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16"
+                             height="16"
+                             fill="currentColor"
+                             class="bi bi-chevron-down"
+                             viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item active">
+                            <a href="#settingApplication" class="sub-menu-link js-page-scrolling">Application
+                                settings</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#settingsAppSettings" class="sub-menu-link js-page-scrolling">
+                                        Settings > App Settings
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesSetting" class="sub-menu-link js-page-scrolling">
+                                        Sales Setting
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#emailSetting" class="sub-menu-link js-page-scrolling">
+                                        Email Setting
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#emailTemplates" class="sub-menu-link js-page-scrolling">
+                                        Email Templates
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#smsSettings" class="sub-menu-link js-page-scrolling">
+                                        Sms Settings
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#smsTemplates" class="sub-menu-link js-page-scrolling">
+                                        Sms Templates
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#roles" class="sub-menu-link js-page-scrolling">
+                                        Roles
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#users" class="sub-menu-link js-page-scrolling">
+                                        Users
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#taxes" class="sub-menu-link js-page-scrolling">
+                                        Taxes
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#branches" class="sub-menu-link js-page-scrolling">
+                                        Branches
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#shippingArea" class="sub-menu-link js-page-scrolling">
+                                        Shipping Area
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#cashRegisters" class="sub-menu-link js-page-scrolling">
+                                        Cash Registers
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#paymentTypes" class="sub-menu-link js-page-scrolling">
+                                        Payment Types
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesInvoice" class="sub-menu-link js-page-scrolling">
+                                        Sales Invoice
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#purchaseInvoice" class="sub-menu-link js-page-scrolling">
+                                        Purchase Invoice
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#invoiceTemplates" class="sub-menu-link js-page-scrolling">
+                                        Invoice Templates
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#productSetting" class="sub-menu-link js-page-scrolling">
+                                        Product Setting
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#stockAdjustmentTypes" class="sub-menu-link js-page-scrolling">
+                                        Stock Adjustment Types
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#notification" class="sub-menu-link js-page-scrolling">
+                                        Notification
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#updates" class="sub-menu-link js-page-scrolling">
+                                        Updates
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item active">
+                            <a href="#manageProduct" class="sub-menu-link js-page-scrolling">Manage Product</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#manageProduct" class="sub-menu-link js-page-scrolling">
+                                        Product > Manage Product
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#importProduct" class="sub-menu-link js-page-scrolling">
+                                        Import Product
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#categories" class="sub-menu-link js-page-scrolling">
+                                        Categories
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#brands" class="sub-menu-link js-page-scrolling">
+                                        Brands
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#groups" class="sub-menu-link js-page-scrolling">
+                                        Groups
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#variantAttributes" class="sub-menu-link js-page-scrolling">
+                                        Variant Attributes
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#units" class="sub-menu-link js-page-scrolling">
+                                        Units
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#importOpeningStock" class="sub-menu-link js-page-scrolling">
+                                        Import Opening Stock
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#stockAdjustment" class="sub-menu-link js-page-scrolling">
+                                        Stock Adjustment
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#printBarcode" class="sub-menu-link js-page-scrolling">
+                                        Print Barcode
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item active">
+                            <a href="#manageContacts" class="sub-menu-link js-page-scrolling">Manage Contacts</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#manageContacts" class="sub-menu-link js-page-scrolling">
+                                        Contacts > Manage Contacts
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#manageCustomers" class="sub-menu-link js-page-scrolling">
+                                        Manage Customers
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#manageCustomerGroups" class="sub-menu-link js-page-scrolling">
+                                        Manage Customer Groups
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#manageSuppliers" class="sub-menu-link js-page-scrolling">
+                                        Manage Suppliers
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item active">
+                            <a href="#manageSalesAndPurchase" class="sub-menu-link js-page-scrolling">POS View</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#manageSalesAndPurchase" class="sub-menu-link js-page-scrolling">
+                                        POS View > Manage Sales And Purchase
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#returnSale" class="sub-menu-link js-page-scrolling">
+                                        Manage Return Sale
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#creditSale" class="sub-menu-link js-page-scrolling">
+                                        Manage Credit Sale
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#internalSaleAndPurchase" class="sub-menu-link js-page-scrolling">
+                                        Manage Internal Sale and Purchase
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#internalTransfer" class="sub-menu-link js-page-scrolling">
+                                        Manage Internal Transfer
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#changeBranch" class="sub-menu-link js-page-scrolling">
+                                        Change Branch
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#chooseCashRegisters" class="sub-menu-link js-page-scrolling">
+                                        Choose Cash Registers
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#registerInfo" class="sub-menu-link js-page-scrolling">
+                                        Get Register Info
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item active">
+                            <a href="#reports" class="sub-menu-link js-page-scrolling">Reports</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#viewReports" class="sub-menu-link js-page-scrolling">
+                                        Reports > View Reports
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesReport" class="sub-menu-link js-page-scrolling">
+                                        Sales
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesDetailsReport" class="sub-menu-link js-page-scrolling">
+                                        Sales Details
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesSummeryReport" class="sub-menu-link js-page-scrolling">
+                                        Sales Summery
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#purchaseReport" class="sub-menu-link js-page-scrolling">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#purchaseSummeryReport" class="sub-menu-link js-page-scrolling">
+                                        Purchase Summery
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#registerLogReport" class="sub-menu-link js-page-scrolling">
+                                        Register Logs
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#inventoriesReport" class="sub-menu-link js-page-scrolling">
+                                        Inventories
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#paymentsReport" class="sub-menu-link js-page-scrolling">
+                                        Payments
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#paymentsSummeryReport" class="sub-menu-link js-page-scrolling">
+                                        Payment Summary
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesStatisticsReport" class="sub-menu-link js-page-scrolling">
+                                        Sales Statistics
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#taxReport" class="sub-menu-link js-page-scrolling">
+                                        Tax
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#profitLossReport" class="sub-menu-link js-page-scrolling">
+                                        Profit & Loss
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#customerSummeryReport" class="sub-menu-link js-page-scrolling">
+                                        Customer Summary
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#supplierSummeryReport" class="sub-menu-link js-page-scrolling">
+                                        Suppliers Summary
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesAndPurchaseReport" class="sub-menu-link js-page-scrolling">
+                                        Sales & Purchase
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#stockAdjustmentReport" class="sub-menu-link js-page-scrolling">
+                                        Stock Adjustment
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#shipmentReport" class="sub-menu-link js-page-scrolling">
+                                        Shipment Report
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item active">
+                            <a href="#restaurantModule" class="sub-menu-link js-page-scrolling">Restaurant Module</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Development Guide-->
+                <li class="nav-item">
+                    <a href="development-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                        Development Guide
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16"
+                             height="16"
+                             fill="currentColor"
+                             class="bi bi-chevron-down d-none"
+                             viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <ul class="sub-menu d-none">
+                        <li class="sub-menu-item">
+                            <a href="#languageSettings" class="sub-menu-link js-page-scrolling">Language Settings</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#setLanguage" class="sub-menu-link js-page-scrolling">Set Language</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#updateLanguage" class="sub-menu-link js-page-scrolling">Update
+                                        Language</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#environmentConfiguration" class="sub-menu-link js-page-scrolling">Environment
+                                configuration</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#addNewPage" class="sub-menu-link js-page-scrolling">Add new page</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#changeColorAndDesign" class="sub-menu-link js-page-scrolling">Change color &
+                                design</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Change Log-->
+                <li class="nav-item">
+                    <a href="change-log.html" class="nav-link">Change Log</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="page-content-wrapper">
+
+        <section class="scrollspy-section" id="settingApplication">
+
+            <div class="scrollspy-section mb-5" id="settingsAppSettings">
+                <h4>
+                    Application settings
+                </h4>
+                <p>
+                    Settings related settings are listed bellow
+                </p>
+
+                <div class="scrollspy-section mb-5" id="generalSettingsAppLevel">
+                    <h5>
+                        General settings
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Application"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can set your <b class="font-weight-600">Application Name</b>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b class="font-weight-600">Application logo</b> is used in you application. Select image
+                                of
+                                your logo.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Set <b class="font-weight-600">Rows per table</b> of the application.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Upload your <b class="font-weight-600">Background Image</b> of the application.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Set <b class="font-weight-600">Date</b> and <b class="font-weight-600">Time</b> format
+                                and <b class="font-weight-600">Timezone</b> the way you want to see date/time in your
+                                application.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b class="font-weight-600">Currency symbol</b>,
+                                <b class="font-weight-600">Currency position</b>,
+                                <b class="font-weight-600">Decimal separator</b>,
+                                <b class="font-weight-600">Thousand separator</b>,
+                                <b class="font-weight-600">Number of decimal</b> also can be set.
+                            </p>
+                            <img src="images/settings/applicationSetting.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="salesSetting">
+                    <h5>
+                        Sales Setting
+                    </h5>
+                    <p>
+                        Sales related setting will be set here. For example Enable offline sale, Disable out of stock
+                        product in POS view
+                        Enable sales delete, enable edit sales date, Auto sms to customer after sale
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Sales Settings"
+                            </p>
+                            <img src="images/settings/sales_setting_for_auto_sms.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                <b>Offline Sales</b>
+                            </p>
+                            <ul>
+                                <li>
+                                    We provide you an additional facility that you can use our app in offline mode for
+                                    temporary support in sales and receiving.
+                                </li>
+                                <li>
+                                    The scenario is if you goes offline in time of sales or receiving for internet
+                                    connectivity, you can still continue your sales or receiving.
+                                </li>
+                                <li>
+                                    Remember that you can't go to any other page, you can't change your branch or cash
+                                    register and you can't hold the sales in time of offline. Even can't refresh the
+                                    page.
+                                </li>
+                                <li>
+                                    <b class="text-danger">*** Please don't clear your browser history until you go back
+                                        to online.</b>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                You might want to disable out stock product from showing in POS View. You can
+                                enable/disable.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Enable/disable sales delete.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Enable/disable sales date edit.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                To enable Auto sms to customer after sale you need to set sms settings first
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="emailSetting">
+                    <h5>
+                        Email Setting
+                    </h5>
+                    <p>
+                        App level configuration will be used for app related processing. For example inviting user,
+                        password reset email, Notification etc.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Email"
+                            </p>
+                            <img src="images/settings/emailSetting.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><p> If you want to add your server email for this configuration then select "Send mail" from
+                            "Email
+                            driver". You can also choose "SMTP", if you want to add other email provider's service.</p>
+                        </li>
+                        <li><p> You can also check if the setting is working or not by giving a mail address in the
+                            "Test mail"
+                            while saving the changes.</p></li>
+                        <li><p> Set email sent from name as your choice.</p></li>
+                        <li><p> Set your Email address as email. [N.B: Grant permission to access your email for this
+                            application, if needed.(example: For Gmail - Allow less secure apps: 'ON')].</p></li>
+                        <li><p> Select email driver. If smtp:-</p>
+                            <ul>
+                                <li><p> Type email host name.[ example : for gmail, smtp.gmail.com ]</p></li>
+                                <li><p> Type the port number :- [ example : for gmail, port 587 ]</p></li>
+                                <li><p> Type password :- password of that email with is used as the email address.</p>
+                                </li>
+                                <li><p> Select Encryption type :- Port 465 (SSL required), Port 587 (TLS required).</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="emailTemplates">
+                    <h5>
+                        Email Templates
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Email Templates"
+                            </p>
+                            <img src="images/settings/emailTemplates.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                You can update email template settings from here.
+                            </p>
+                            <ul>
+                                <li><p>You can edit template. and you have to use below variables in your template</p>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>{app_name} : Name of Your application</li>
+                                        <li> {first_name} : Your user first name</li>
+                                        <li>{last_name} : Your user last name</li>
+                                        <li>{verification_link}: Verification link which will be include in sending
+                                            email
+                                        </li>
+                                        <li>{reset_password_link}:Reset password link.</li>
+                                        <li><p><b class="text-warning">*** Use these variable as they are. Don not try
+                                            to change.</b></p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="images/settings/editEmailTemplate.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="scrollspy-section mb-5" id="smsSettings">
+                <h4>
+                    Sms settings
+                </h4>
+                <p>
+                    Here Delivery, Notification are similar to App level settings.
+                </p>
+
+                <div class="scrollspy-section mb-5" id="privacySettingsAppLevel">
+                    <h5>
+                        Privacy
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Sms Settings"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can set sms setting from here.
+                            </p>
+                            <img src="images/settings/sms_setting.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Choose driver, set necessary credentials.
+                            </p>
+                            <img src="images/settings/sms_setting1.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="scrollspy-section mb-5" id="smsTemplates">
+                    <h5>
+                        Sms Templates
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Sms Templates"
+                            </p>
+                            <img src="images/settings/sms_template.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                To set a template you need to use variable as it is. Available variables are
+                                {first_name}, {last_name}
+                                , {app_name} , {invoice_id}, {total}
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="roles">
+                    <h5>
+                        Roles
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Roles"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Users and Roles is an important feature in any application. You may need different roles
+                                for different users. For that you have to create roles as you required and gives them
+                                permission to
+                                access.
+                            </p>
+                            <img src="images/settings/roles.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Roles in an important thing in your application.You may need many role like :-
+                                Manager,Assist.Manager, Supervisor,Account,etc etc. For that you have to create roles as
+                                you
+                                required and gives them permission to access </p>
+
+                        </li>
+                        <li>
+                            <p>Application roles is here.</p>
+                            <img src="images/settings/roles1.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                You can manage permissions of any role by clicking on
+                                <b class="font-weight-600">Manage</b> of that specific role from "Permission" column.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Assign roles to user</p>
+                            <img src="images/settings/addRoles.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can edit and delete roles. </p>
+                            <img src="images/settings/editRoles.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="users">
+                    <h5>
+                        Users
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Users"
+                            </p>
+                        </li>
+                        <li>
+                            <p>Here is your application <b>User Settings</b></p>
+                        </li>
+                        <li>
+                            <p>All user list is here.</p>
+                        </li>
+
+                        <li>
+                            <p>You can search data</p>
+                            <img src="./images/settings/userList.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can add <b>Invite</b> user by clicking <b>Add</b> button</p>
+                        </li>
+                        <li>
+                            <p>Fill up the required field and invite</p>
+                            <img src="./images/settings/addUser.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can enable or disable user </p>
+                            <img src="./images/settings/enableUser.jpg" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can change <b>user role</b> click on edit icon</p>
+                            <img src="./images/settings/userRoleEdit.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can remove user form admin.</p>
+                            <img src="./images/settings/removeUser.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="taxes">
+                    <h5>
+                        Taxes
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Taxes"
+                            </p>
+                        </li>
+                        <li>
+                            <p>All taxes list is here</p>
+                            <img src="./images/settings/taxes.png" class="img-thumbnail mb-3" alt="">
+
+                        </li>
+                        <li>
+                            <p>You can add,edit and delete taxes <b>Action</b></p>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Tax name.</li>
+                                <li>Tax percentage.</li>
+                                <li>Choose your taxes will default or not.</li>
+                            </ul>
+                            <img src="./images/settings/taxes1.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="branches">
+                    <h5>
+                        Branches
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Branches"
+                            </p>
+                        </li>
+                        <li>
+                            <p>You may have many branch . All branch setting is here. Manage branch from here</p>
+                        </li>
+                        <li>
+                            <p>All branch list is here</p>
+                            <img src="./images/settings/branches.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By clicking <b>Add</b> you can create new branch </p>
+                        </li>
+                        <li>
+                            <p>Choose tax and cash register.</p>
+                            <img src="./images/settings/addBranch.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can edit branch and choose cash register.</p>
+                            <img src="./images/settings/editBranch.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="shippingArea">
+                    <h5>
+                        Shipping Area
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Shipment"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Add/Edit/Delete Shipping Area with price
+                            </p>
+                            <img src="./images/settings/shippingArea.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="cashRegisters">
+                    <h5>
+                        Cash Registers
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Cash Registers"
+                            </p>
+                        </li>
+                        <li>
+                            <p>All cash register is here. </p>
+                            <img src="./images/settings/cashRegister.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By clicking <b>add</b> you can create new cash register</p>
+                            <img src="./images/settings/addCashRegister.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can edit cash register</p>
+                            <img src="./images/settings/editCashRegister.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="paymentTypes">
+                    <h5>
+                        Payment Types
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Payment Types"
+                            </p>
+                        </li>
+                        <li>
+                            <p>All payment type list is here.</p>
+                            <img src="./images/settings/paymentTypes.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can add new payment type by clicking <b>Add</b> button</p>
+                        </li>
+                        <li>
+                            <p>You can edit payment type</p>
+                            <img src="./images/settings/addPaymentType.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="salesInvoice">
+                    <h5>
+                        Sales Invoice
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Sales Invoice"
+                            </p>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Add Prefix and suffix for your sales invoice</li>
+                                <li>Invoice starts number for sales</li>
+                                <li>Invoice logo for sales</li>
+                                <li>You can choose auto generate receipt option for sales</li>
+                                <li>To send sales invoice to customers email please choose yes of "Auto email receive to
+                                    customer"
+                                    <img src="./images/settings/salesInvoiceSetting.png" class="img-thumbnail mb-3"
+                                         alt="">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="purchaseInvoice">
+                    <h5>
+                        Purchase Invoice
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Purchase Invoice"
+                            </p>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Add Prefix and suffix for your Purchase invoice</li>
+                                <li>Invoice starts number for purchase</li>
+                                <li>Invoice logo for purchase</li>
+                                <li>You can choose auto generate receipt option for purchase
+                                    <img src="./images/settings/purchaseInvoiceSetting.png" class="img-thumbnail mb-3"
+                                         alt="">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="invoiceTemplates">
+                    <h5>
+                        Invoice Templates
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Invoice Templates"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can manage invoice template
+                            </p>
+                            <img src="./images/settings/invoiceTemplate1.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Variables will use for dynamic rendering of your data</p>
+                            <ol>
+                                <li>There are two segments of variables we call it <b>Independent chips</b> and <b>Table
+                                    chips.</b></li>
+                                <li>You <b>can not</b> use <b>Table chips</b> outside of a table <small>(HTML
+                                    table)</small>/li>
+                                <li>You <b> can</b> use <b>Independent chips</b> inside of the table but <b>recommended
+                                    not to use</b> inside the table
+                                </li>
+                                <li>If you find yourself in a situation that you can not reach your target then you
+                                    always have an option restore to get bach default invoice template structure
+                                </li>
+                            </ol>
+                            <img src="./images/settings/invoiceTemplateChips.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>How to <b>Add/Create</b> an invoice</p>
+                            <ol>
+                                <li>Go to Settings > Invoice Templates > Click the “Add” button.</li>
+                                <li>Give a name for the Title</li>
+                                <li>Select a <b>Type</b> from “Sales”/”Purchase”</li>
+                                <li>Select a <b>Invoice Size</b> from “Small”/”Large”</li>
+                                <li> Select a <b>Width</b> from 70mm to 104mm for Small size and 95mm to 160mm for Large
+                                    invoice size.
+                                </li>
+                                <li> Your table will be shown in the editor section. Change if as per your requirement
+                                    and your Invoice Template will be created.
+                                </li>
+                            </ol>
+                            <img src="./images/settings/invoiceTemplate3Add.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>How to Edit an invoice</p>
+                            <ol>
+                                <li>Go to Settings > Invoice Templates > Hover on <b>Action</b> on which template you
+                                    want to edit
+                                </li>
+                                <li>Click on <b>Edit</b> icon</li>
+                                <li>You can not change <b>Type</b> while editing a template</li>
+                                <li>Select a <b>Invoice Size</b> from “Small”/”Large”</li>
+                                <li>Based on the type you will get a template structure which you can customize</li>
+                                <li> Select a <b>Width</b> from 70mm to 104mm for Small size and 95mm to 160mm for Large
+                                    invoice size.
+                                </li>
+                                <li> Your table will be shown in the editor section. Change if as per your requirement
+                                    and your Invoice Template will be created.
+                                </li>
+                            </ol>
+                            <img src="./images/settings/invoiceTemplate2Edit.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Set invoice template for specific <b>Branch</b> and <b>Cash Register</b>
+                            </p>
+                            <ol>
+                                <li>Go to Settings > Cash Registers</li>
+                                <li>Hover your mouse over the Action menu from any Cash Register and Click the edit icon
+                                    to edit.
+                                </li>
+                                <li>Select your required invoice template from the drop down menu of “Sales invoice
+                                    template” for Sales and “Purchasing invoice template” for Purchase and Save.
+                                </li>
+                                <li class="text-warning">Remember these invoices will work only for the specific Branch
+                                    and Cash Register you selected for.
+                                </li>
+                            </ol>
+                            <img src="./images/settings/invoiceTemplate4SetCashRegister.png" class="img-thumbnail mb-3"
+                                 alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Now you can use your own designed invoice!
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="productSetting">
+                    <h5>
+                        Products Setting
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Products Setting"
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can manage product setting </p>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Default re-order quantity : Product Re-order quantity</li>
+                                <li>SKU prefix : Set Product SKU prefix</li>
+                            </ul>
+                            <img src="./images/settings/productSettings.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="stockAdjustmentTypes">
+                    <h5>
+                        Stock Adjustment Types
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Stock Adjustment Types"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can Create/Edit/Delete Stock Adjustment Types
+                            </p>
+                            <img src="images/settings/adjustStockTypeSetting.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                This type will be used when you want to adjust stock from Product module
+                            </p>
+                            <img src="images/settings/stockAdjustmentFromProduct.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="notification">
+                    <h5>
+                        Notification
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Notification"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Enable Notify manager for low stock
+                            </p>
+                            <img src="./images/settings/notification.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p> Assign branch manager</p>
+                            <img src="./images/settings/branch.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                You can see Sending rate, Delivery rate, Bounce rate, Open rate, Click rat. which is
+                                based on rate of all brands email logs.
+                            </p>
+                        </li>
+                        <li>
+                            <p>When low stock notification is on the corn job setting will automatically generated.</p>
+                            <img src="./images/settings/cornjob.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="updates">
+                    <h5>
+                        Updates
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Settings" > "Updates"
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see the current version of your application as well as the new versions (if any
+                                new
+                                upgradable version is available).</p>
+                        </li>
+                        <li>
+                            <p>Just click the new version to upgrade your application.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="scrollspy-section" id="manageProduct">
+            <div class="scrollspy-section mb-5">
+                <h4>
+                    Manage Product
+                </h4>
+                <p>
+                    Add/Edit/Delete standard and variant product
+                </p>
+
+                <div class="scrollspy-section mb-5" id="manageProducts">
+                    <h5>
+                        Product
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Product</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>All product list can check here.</p>
+                        </li>
+                        <li>
+                            <p>Data can be filter</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Export</b> for export product</p>
+                            <img src="./images/products/allProduct.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By click on product title you can see product details</p>
+                            <img src="./images/products/productDetails.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Click on action you can delete and edit product</p>
+                            <img src="./images/products/productAction.jpg" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By click edit icon edit require fields and save it</p>
+                            <img src="./images/products/editProduct.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>For add product click on <b>Add button</b>.</p>
+                            <img src="./images/products/addNewProduct.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can also add new category. To add new category click <b>+</b>(right side of category
+                                field)</p>
+                            <img src="./images/products/addNewCategory.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can also add new brand. To add new brand click <b>+</b>(right side of brand field)
+                            </p>
+                            <img src="./images/products/addNewBrand.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can also add new group. To add new group click <b>+</b>(right side of group field)
+                            </p>
+                            <img src="./images/products/addNewGroup.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can also add new unit. To add new unit click <b>+</b>(right side of unit field)</p>
+                            <img src="./images/products/addNewUnits.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Fill up require information and save it. </p>
+                            <img src="./images/products/addReqNewProduct.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>For add variant product click on <b>Add button</b>.</p>
+                        </li>
+                        <li>
+                            <p>Then for variant product choose product type <b>Variant product</b></p>
+                        </li>
+                        <li>
+                            <p>If you need new variants click on <b>Add new variant</b></p>
+                        </li>
+                        <li>
+                            <p>Fill product variants <b>Field</b></p>
+                        </li>
+                        <li>
+                            <p>Fill up require information and save it. </p>
+                            <img src="./images/products/addNewVariantProduct.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="importProduct">
+                    <h5>
+                        Import Product
+                    </h5>
+
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Product</b>
+                                Tab
+                                > At the right side > <b class="font-weight-600">Action</b> Button > <b
+                                    class="font-weight-600">Import Product</b>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Click on <b>Import</b> for import products</p>
+                            <img src="./images/products/importProducts.jpg" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Download a sample copy</p>
+                        </li>
+                        <li>
+                            <p>Choose you file and preview it.Then click upload for upload file. </p>
+                            <img src="./images/products/importProductUpload.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="categories">
+                    <h5>
+                        Categories
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Category</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>All categories list can check out here.</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Export</b> for export categories</p>
+                            <img src="./images/products/categories.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Click <b>Add</b> for add new categories</p>
+                        </li>
+                        <li>
+                            <p>Fill up require information and save it. </p>
+                            <img src="./images/products/addCategories.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Click on Action you will find edit button</p>
+                        </li>
+                        <li>
+                            <p>Click Edit icon and edit you category </p>
+                        </li>
+                        <li>
+                            <p>Delete icon for delete.</p>
+                            <img src="./images/products/editCategory.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="brands">
+                    <h5>
+                        Brands
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Brands</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see all brand</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Export</b> for export brand</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Add</b> for add new brand</p>
+                        </li>
+                        <li>
+                            <p>Edit brand as category edit</p>
+                        </li>
+                        <li>
+                            <p>Delete icon for delete.</p>
+                            <img src="./images/products/brand.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="groups">
+                    <h5>
+                        Groups
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Groups</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li><p>You can see all group</p></li>
+                        <li><p>Click <b>Export</b> for export group</p></li>
+                        <li><p>Click <b>Add</b> for add new group</p></li>
+                        <li> <p>Edit group as category edit</p></li>
+                        <li>
+                            <p>Delete icon for delete.</p>
+                            <img src="./images/products/group.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="variantAttributes">
+                    <h5>
+                        Variant Attributes
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Variant Attributes</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see all Variant attributes</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Export</b> for export Variant attributes</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Add</b> for add new Variant attributes</p>
+                        </li>
+                        <li>
+                            <p>Edit Variant attributes as category edit</p>
+                        </li>
+                        <li>
+                            <p>Delete icon for delete.</p>
+                            <img src="./images/products/variantAttributes.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="units">
+                    <h5>
+                        Units
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Units</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see all units</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Export</b> for export units</p>
+                        </li>
+                        <li>
+                            <p>Click <b>Add</b> for add new units</p>
+                        </li>
+                        <li>
+                            <p>Edit units as category edit</p>
+                        </li>
+                        <li>
+                            <p>Delete icon for delete.</p>
+                            <img src="./images/products/units.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="importOpeningStock">
+                    <h5>
+                        Import Opening Stock
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Product</b>
+                                Tab
+                                > At the right side > <b class="font-weight-600">Action</b> Button > <b
+                                    class="font-weight-600">Import Opening Stock</b>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Go to import opening product process same as import product </p>
+                            <img src="./images/products/importOpeningProduct.png"
+                                 class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Click on <b>Import</b> for import opening stock</p>
+                        </li>
+                        <li>
+                            <p>Download a sample copy</p>
+                        </li>
+                        <li>
+                            <p>Choose you file and preview it.Then click upload for upload file. </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="stockAdjustment">
+                    <h5>
+                        Stock Adjustment
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Product</b>
+                                Tab
+                                > At the right side > <b class="font-weight-600">Action</b> Button > <b
+                                    class="font-weight-600">Stock Adjustment</b>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Stock Adjustment modal will be open.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Select the branch where you want to adjust stock.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Search for Product and Add quantity.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If you want Positive adjust then give positive quantity. Ex: x number of quantity will be added into the system
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If you want Negative adjust then give positive quantity. Ex: x number of quantity will be subtracted from the system
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Choose Adjustment Type. Finally You can add multiple entries
+                            </p>
+                            <img src="./images/products/stockAdjustmentProduct.png"
+                                 class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="printBarcode">
+                    <h5>
+                        Print Barcode
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Product" <small>from side bar</small> and click on <b class="font-weight-600">Product</b>
+                                Tab
+                                > At the right side > <b class="font-weight-600">Action</b> Button > <b
+                                    class="font-weight-600">Print Barcode</b>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Select product to print barcodes.
+                            </p>
+                            <img src="./images/products/barcodeSelectProduct.png"
+                                 class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Get a preview of the printable barcodes.
+                            </p>
+                            <img src="./images/products/barcodePreviewToPrint.png"
+                                 class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="scrollspy-section" id="manageContacts">
+            <div class="scrollspy-section mb-5">
+                <h4>
+                    Manage Contacts
+                </h4>
+                <p>
+                    Customers, Customer Groups and Suppliers will be managed from here.
+                </p>
+
+                <div class="scrollspy-section mb-5" id="manageCustomers">
+                    <h5>
+                        Manage Customers
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Contacts" > "Customers"
+                            </p>
+                        </li>
+                        <li>
+                            <p>In you application all customer list is here you can do this operation here.</p>
+                        </li>
+                        <li>
+                            <p>You can see customer list data</p>
+                            <img src="./images/contacts/allCustomer.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By clicking add button you can add new customer.</p>
+                        </li>
+                        <li>
+                            <p>Fill up require information and click save.New customer will be added </p>
+                            <img src="./images/contacts/addNewCustomer.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By clicking import button you can import customer</p>
+                        </li>
+                        <li>
+                            <p>Download a sample copy and ready you file as sample copy. coulmn name must be same as
+                                sample
+                                file. </p>
+                            <img src="./images/contacts/importCustomer.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Choose your file.</p>
+                        </li>
+                        <li>
+                            <p>Click customer preview you can see you uploaded file</p>
+                        </li>
+                        <li>
+                            <p>Click upload to upload it.</p>
+                            <img src="./images/contacts/customerPreview.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By clicking <b>Export</b> button you can export data.</p>
+                        </li>
+                        <li>
+                            <p>By clicking the link you can see details.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="manageCustomerGroups">
+                    <h5>
+                        Manage Customer Groups
+                    </h5>
+                    <p>
+                        App level configuration will be used for app related processing. For example inviting user,
+                        password reset email, Notification etc.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Contacts" > "Customer Groups"
+                            </p>
+                        </li>
+                        <li>
+                            <p>In you application group list is here .</p>
+                        </li>
+                        <li>
+                            <p>You can see groups</p>
+                        </li>
+                        <li>
+                            <p><b>Export</b> button you can export data.</p>
+                            <img src="./images/contacts/groups.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By clicking add you can add new group</p>
+                        </li>
+                        <li>
+                            <p>Fill required information and save it.</p>
+                        </li>
+                        <li>
+                            <p>You can choose default operation yes/no.</p>
+                            <img src="./images/contacts/addNewGroup.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="manageSuppliers">
+                    <h5>
+                        Manage Suppliers
+                    </h5>
+                    <p>
+                        You can Create/Edit/Delete/Export/Import supplier from here
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Contacts" > "Suppliers"
+                            </p>
+                            <img src="images/contacts/suppliers.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You will found all suppliers list.</p>
+                        </li>
+                        <li>
+                            <p>You can see suppliers</p>
+                        </li>
+                        <li>
+                            <p>By clicking the link you can see details</p>
+                        </li>
+                        <li>
+                            <p>By click <b>Export</b> button you can export data</p>
+                            <img src="./images/contacts/suppliers.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By click add you can add new suppliers</p>
+                        </li>
+                        <li>
+                            <p>Fill required information and save it.</p>
+                            <img src="./images/contacts/addSuppliers.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By click import button you can import customer</p>
+                        </li>
+                        <li>
+                            <p>Download a sample copy and ready you file as sample copy .make sure column name will
+                                same.</p>
+                            <img src="./images/contacts/importSuppliers.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Choose your file .</p>
+                        </li>
+                        <li>
+                            <p>Click customer preview you can see you uploaded file</p>
+                        </li>
+                        <li>
+                            <p>Click upload for upload it .</p>
+                            <img src="./images/contacts/previewSuppliers.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="scrollspy-section" id="manageSalesAndPurchase">
+            <div class="scrollspy-section mb-5">
+
+                <div class="scrollspy-section mb-5" id="salesAndPurchase">
+                    <h5>
+                        Manage Sales And Purchase
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Sales"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Select the <b class="font-weight-600">Branch</b> from where you want to Sale
+                            </p>
+                            <img src="./images/sales/selectSaleBranch.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Select the <b class="font-weight-600">Cash Register</b> from where you want to Sale
+                            </p>
+                            <img src="./images/sales/selectSalesCashRegister.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Select the <b class="font-weight-600">Cash Register</b> from where you want to Sale.
+                                Enter oping/closing amount of your cash register
+                            </p>
+                            <img src="./images/sales/selectSalesCashRegister.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                You should be able to enter your <b class="font-weight-600">POS Sale View</b>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can search product from here. And manage your Sales from here.
+                            </p>
+                            <img src="./images/sales/salesView.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p> Simply connect your barcode scanner with your pc. Then keep the cursor in the product
+                                search box. The barcode scanning will work.</p>
+                        </li>
+                        <li>
+                            <p> You can see all the listed product available in your system.</p>
+                        </li>
+                        <li>
+                            <p> You can search any product and customer.</p>
+                        </li>
+                        <li>
+                            <p> You can also add customer from Cart.</p>
+                            <img src="./images/sales/addCustomerFromCart.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p> Can remove any product from the cart using delete icon </p>
+                        </li>
+                        <li>
+                            <p> Then you can easily modify the quantity, price and discount</p>
+                        </li>
+                        <li>
+                            <p> By clicking pay your order will go the payment phase</p>
+                            <img src="./images/sales/receiptDonePayment.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                If you want to hold an order, You can hold an order by clicking the "Pause" button from
+                                the cart .
+                            </p>
+                            <img src="./images/sales/holdOrder.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                You can see a list of hold orders. From the list you can also add the order into the
+                                cart.
+                            </p>
+                            <img src="./images/sales/holdOrderList.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Add discount on sale, percentage on every item as well as on entire subtotal amount
+                            </p>
+                            <img src="./images/sales/discountOnSale.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="returnSale">
+                    <h5>
+                        Manage Return Sale
+                    </h5>
+                    <p>
+                        You can return a sale (order with its items) partially as well as fully
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Sale" > "Change Sale Type To Return" <small>From top bar</small>
+                            </p>
+                            <img src="images/sales/changeSalesReturnType.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Select Returns From the pop up modal
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Search and select for Invoice Id for the return Sale
+                            </p>
+                            <img src="images/sales/searchReturnProduct.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Order will than get added to cart
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Order will than get added to cart
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Click pay and it will generate new invoice for return product.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="creditSale">
+                    <h5>
+                        Manage Credit Sale
+                    </h5>
+                    <p>
+                        Manage credit only to Existing customer
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Sale" > "Search for Customer" or "Add New Customer" > "Pay"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Go to "Sale" > "Cart" > "Pay"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Select Credit and enter amount and complete payment
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can add partial Credit Sales along with payment with payment method
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Select Credit than enter the amount which is less than the total amount, Click Add
+                                Payment, Than enter the rest of the amount with different payment method
+                            </p>
+                            <img src="images/sales/creditSale.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="internalSaleAndPurchase">
+                    <h5>
+                        Manage Internal Sale And Purchase
+                    </h5>
+                    <p>
+                        Internal Sales
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Sales" > "Change Sale To Type To Internal" <small>From top bar</small>
+                            </p>
+                            <img src="images/sales/internalSales.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                    <p>
+                        Internal Purchase
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Purchase" > "Change Purchase Type To Internal" <small>From top bar</small>
+                            </p>
+                            <img src="images/sales/internalPurchase.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="internalTransfer">
+                    <h5>
+                        Manage Internal Transfer
+                    </h5>
+                    <p>
+                        App supports internal transfer of quantity from branch to branch with any profit/loss. It helps
+                        to adjust inventory from one to another.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Sales" > "Change Sales Type To Internal Transfer" <small>From top bar</small>
+                            </p>
+                            <img src="images/sales/internalTransfer.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Select a Branch to where you want to transfer internally and continue add product to
+                                cart and rest.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="changeBranch">
+                    <h5>
+                        Change Branch
+                    </h5>
+                    <p>
+                        You can change branch from both Sale and Purchase "Purchase" > "Change Branch" <small>From top
+                        bar</small>
+                    </p>
+                    <img src="images/sales/selectSaleBranch.png" class="img-thumbnail mb-3" alt="">
+
+                </div>
+
+                <div class="scrollspy-section mb-5" id="chooseCashRegisters">
+                    <h5>
+                        Choose Cash Register
+                    </h5>
+                    <p>
+                        Here you can change cash register
+                    </p>
+                    <img src="images/sales/selectSalesCashRegister.png" class="img-thumbnail mb-3" alt="">
+                </div>
+
+                <div class="scrollspy-section mb-5" id="registerInfo">
+                    <h5>
+                        Check Register Info
+                    </h5>
+                    <p>
+                        You can check you current status of the cash register from Register Info
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Sales" > "Register info" <small>From the top bar</small>
+                            </p>
+                            <img src="images/sales/registerInfo.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>
+                                Here you get the brief idea about sales from this register
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="scrollspy-section" id="reports">
+            <div class="scrollspy-section mb-5">
+
+                <div class="scrollspy-section mb-5" id="viewReports">
+                    <h5>
+                        View Reports
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="salesReport">
+                    <h5>
+                        Sales Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Sales</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see all sales.</p>
+                        </li>
+                        <li>
+                            <p>Data can be filter.</p>
+                        </li>
+                        <li>
+                            <p>You can search data.</p>
+                        </li>
+                        <li>
+                            <p>Data can export by click <b>Export</b> button.</p>
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+
+                            <img src="./images/report/salesReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>By clicking link you can see details</p>
+                            <img src="./images/report/sales.jpg" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>User details</p>
+                            <img src="./images/report/userDetails.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="salesDetailsReport">
+                    <h5>
+                        Sales Details Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Sales Details</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can filter data and export data by click export button.</p>
+                            <img src="./images/report/salesDetailsReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="salesSummeryReport">
+                    <h5>
+                        Sales Summery Report
+                    </h5>
+                    <ul>
+
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Sales Summery</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see all sales summery</p>
+                        </li>
+                        <li>
+                            <p>By clicking export button you can <b>Export</b> data</p>
+                        </li>
+                        <li>
+                            <p>You can check total and grand total </p>
+
+                            <img src="./images/report/salesSummery.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Data can be filter</p>
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+
+                            <img src="./images/report/salesSummeryGroup.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="purchaseReport">
+                    <h5>
+                        Purchase Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Purchase</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see Purchase details.</p>
+                        </li>
+                        <li>
+                            <p>You can filter data.</p>
+                        </li>
+                        <li>
+                            <p>By click received by name you can see details.</p>
+                        </li>
+                        <li>
+                            <p>Data can export by click <b>Export</b> button.</p>
+                        </li>
+                        <li>
+                            <p>You can check total and grand total.</p>
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+                            <img src="./images/report/purchaseDetails.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="purchaseSummeryReport">
+                    <h5>
+                        Purchase Summery Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Purchase
+                                Summery</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see receiving summery</p>
+                        </li>
+                        <li>
+                            <p>You can export data by click <b>Export</b> button.</p>
+                        </li>
+                        <li>
+                            <p>You can filter data.</p>
+                            <img src="./images/report/purchaseSummary.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+                            <img src="./images/report/dateRange.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="registerLogReport">
+                    <h5>
+                        Register Log Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Register Log</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see register logs details</p>
+                        </li>
+                        <li>
+                            <p>You can filter data.</p>
+                        </li>
+                        <li>
+                            <p>You can export data by click <b>Export</b> button.</p>
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+                            <img src="./images/report/registerLogs.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                        <li>
+                            <p>Click on clickable link you see details.</p>
+                            <img src="./images/report/details.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="inventoriesReport">
+                    <h5>
+                        Inventory Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Inventory</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see inventories details</p>
+                        </li>
+                        <li>
+                            <p>You can filter data.</p>
+                        </li>
+                        <li>
+                            <p>You can export data by click <b>Export</b> button.</p>
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+                            <img src="./images/report/inventories.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="paymentsReport">
+                    <h5>
+                        Payment Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Payment</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see payments details</p>
+                        </li>
+                        <li>
+                            <p>You can filter data.</p>
+                        </li>
+                        <li>
+                            <p>You can export data by click <b>Export</b> button.</p>
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+                        </li>
+                        <li>
+                            <p>By clicking on clickable link you can se details</p>
+                            <img src="./images/report/payments.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="paymentsSummeryReport">
+                    <h5>
+                        Payment Summery Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Payment Summery</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see payments summery</p>
+                        </li>
+                        <li>
+                            <p>You can filter data.</p>
+                        </li>
+                        <li>
+                            <p>You can export data by click <b>Export</b> button.</p>
+                        </li>
+                        <li>
+                            <p>You can select <b>Date range</b> for data</p>
+                            <img src="./images/report/paymentsSummary.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="salesStatisticsReport">
+                    <h5>
+                        Sales Statistics Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Sales
+                                Statistics</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see sales statistics </p>
+                        </li>
+                        <li>
+                            <p>You can filter data.</p>
+                            <img src="./images/report/salesStatisticsReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="taxReport">
+                    <h5>
+                        Tax Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Tax</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see tax details </p>
+                        </li>
+                        <li>
+                            <p>You can export data by click export button.</p>
+                            <img src="./images/report/tax.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="profitLossReport">
+                    <h5>
+                        Profit Loss Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600"> Profit Loss</b>
+                                Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can see profit/loss details </p>
+                        </li>
+                        <li>
+                            <p>You can export data by click export button.</p>
+                        </li>
+                        <li>
+                            <p>You can filter data</p>
+                        </li>
+                        <li>
+                            <p>You can select date range for data</p>
+                            <img src="./images/report/profitLossReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="customerSummeryReport">
+                    <h5>
+                        Customer Summery Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Customer
+                                Summery</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can export data by click export button.</p>
+                            <img src="./images/report/customerSummaryReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="supplierSummeryReport">
+                    <h5>
+                        Supplier Summery Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Supplier
+                                Summery</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can filter data and export data by click export button.</p>
+                            <img src="./images/report/supplierSummery.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="salesAndPurchaseReport">
+                    <h5>
+                        Sales And Purchase Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Sales And
+                                Purchase</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can filter data and export data by click export button.</p>
+                            <img src="./images/report/salesAndPurchaseReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="stockAdjustmentReport">
+                    <h5>
+                        Stock Adjustment Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Stock
+                                Adjustment</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can filter data and export data by click export button.</p>
+                            <img src="./images/report/stockAdjustmentReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scrollspy-section mb-5" id="shipmentReport">
+                    <h5>
+                        Shipment Report
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Go to "Report" from Side Bar and click on <b class="font-weight-600">Shipment</b> Tab
+                            </p>
+                        </li>
+                        <li>
+                            <p>You can filter data and export data by click export button.</p>
+                            <img src="./images/report/shipmentReport.png" class="img-thumbnail mb-3" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="scrollspy-section" id="restaurantModule">
+            <div class="scrollspy-section mb-5" id="restaurantTables">
+                <h3 class="bd-title mb-3">How to use Restaurant module</h3>
+
+                <div class="item-diver" id="addRestaurantBranch"></div>
+                <h5 class="bd-subtitle">Add Restaurant Branch</h5>
+                <ol>
+                    <li>
+                        To get the features of restaurant module, first you have to add a "Branch" which type should be
+                        restaurant from the setting.
+                        <img src="./images/restaurant/add-restaurant-branch.png"
+                             class="img-thumbnail mb-3" alt="">
+                    </li>
+                </ol>
+
+                <div class="item-diver" id="addTablesInRestaurantBranch"></div>
+                <h5 class="bd-subtitle">Add Tables In Restaurant Branch</h5>
+                <ol>
+                    <li>
+                        Next you have to add tables from table setting. You may have multiple branch which type is
+                        "Restaurant". So, you have to add the tables branch wise.
+                    </li>
+                    <li>
+                        <strong>Steps:</strong> Go to "Table" tab in setting > Open Add Table modal > Give a name of the
+                        table > Choose restaurant branch > Click "Save" to add table.
+                        <img src="./images/restaurant/add-table.png"
+                             class="img-thumbnail mb-3" alt="">
+                    </li>
+                    <li>
+                        *** Remember that, to use restaurant module add tables is not mandatory. You can make order both
+                        with table and without table in your restaurant branch
+                    </li>
+                </ol>
+
+                <div class="item-diver" id="makeRestaurantOrder"></div>
+                <h5 class="bd-subtitle">Make Order In Restaurant Branch</h5>
+                <ol>
+                    <li>
+                        Choose any of your restaurant branch from sales page
+                    </li>
+                    <li>
+                        After selecting restaurant branch you will find two types of order type button in cart-
+                        <ol type="i">
+                            <li>Dine In</li>
+                            <li>Take Away</li>
+                        </ol>
+                        <img src="./images/restaurant/restaurant-order-type.png"
+                             class="img-thumbnail mb-3" alt="">
+                    </li>
+                    <li>
+                        <strong>Dine In :</strong> To book an order with table you have to select order type "Dine In" >
+                        Then click the "Place Order" button > Select the table which you want to book > Then click
+                        "Proceed Order" button.
+                        <img src="./images/restaurant/book-table.png"
+                             class="img-thumbnail mb-3" alt="">
+                        After proceed order your order will be hold with the table and the order can be hold without
+                        table too. <br>
+                        You can book a single table for multiple order.
+                    </li>
+                    <li>
+                        <strong>Take Away :</strong> This type of order will be used when table booking is not needed.
+                        Such as- Parcel Service, Delivery Services etc. With this type of order you can directly go to
+                        payment.
+                    </li>
+                    <li>
+                        You will find the already placed order from the hold order modal form cart. All the on going
+                        order in restaurant with table and without table are listed in hold order list. You can search
+                        the order by invoice id or table name. After adding an order from hold order list to cart you
+                        can go to payment.
+                        <img src="./images/restaurant/search-restaurant-order.png"
+                             class="img-thumbnail mb-3" alt="">
+                    </li>
+                    <li>
+                        You can print a temporary receipt before done payment from payment modal and also from
+                        restaurant table selection modal
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<a class="js-page-scrolling back-to-top" href="#top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up"
+         viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
+</a>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script src="js/documentation.js" type="text/javascript"></script>
+</body>
+</html>

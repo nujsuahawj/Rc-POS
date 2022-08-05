@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+        <title>Gain POS - Inventory and Sales Management System</title>
+
+        <link rel="shortcut icon" href="images/icon.png"/>
+        <link rel="apple-touch-icon" href="images/icon.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/icon.png"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              crossorigin="anonymous"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l">
+
+        <!-- Documentation CSS -->
+        <link rel="stylesheet" href="css/documentation.css">
+    </head>
+
+    <body>
+        <div class="d-none" id="top"></div>
+
+        <div class="wrapper">
+            <div class="sidebar-wrapper">
+                <div id="menu-toggle" class="toggle-sidebar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="logo-wrapper">
+                    <img src="images/logo.png" class="img-fluid" width="250" alt="">
+                </div>
+                <nav class="sidebar-nav">
+                    <ul class="nav">
+                        <!--Introduction-->
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Introduction</a>
+                        </li>
+
+                        <!--Installation-->
+                        <li class="nav-item">
+                            <a href="installation.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Installation
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down d-none"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#installation" class="sub-menu-link js-page-scrolling">
+                                        Server Requirements
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#howToInstall" class="sub-menu-link js-page-scrolling">
+                                        How to Install
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Quick Start Guide-->
+                        <li class="nav-item">
+                            <a href="quick-start-guide.html" class="nav-link">Quick Start Guide</a>
+                        </li>
+
+                        <!--Instruction Guide-->
+                        <li class="nav-item">
+                            <a href="instruction-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Instruction Guide
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down d-none"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#usageOfAppLevel" class="sub-menu-link js-page-scrolling">
+                                        Usage of Application
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#settingsAppSettings" class="sub-menu-link js-page-scrolling">
+                                                Settings > Application Settings
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#generalSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Application
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#salesSetting" class="sub-menu-link js-page-scrolling">
+                                                Sales Setting
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#emailSetting" class="sub-menu-link js-page-scrolling">
+                                                Email
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#emailTemplateSetting" class="sub-menu-link js-page-scrolling">
+                                                Email Template
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#smsSetting" class="sub-menu-link js-page-scrolling">
+                                                Sms Setting
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#smsTemplate" class="sub-menu-link js-page-scrolling">
+                                               Sms template
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#roles" class="sub-menu-link js-page-scrolling">
+                                                Roles
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#users" class="sub-menu-link js-page-scrolling">
+                                                Users
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#taxes" class="sub-menu-link js-page-scrolling">
+                                               Taxes
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#branches" class="sub-menu-link js-page-scrolling">
+                                                Branches
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#shipppingArea" class="sub-menu-link js-page-scrolling">
+                                                Shipping Area
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#cashRegisters" class="sub-menu-link js-page-scrolling">
+                                                Cash registers
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#restaurantTable" class="sub-menu-link js-page-scrolling">
+                                                Restaurant table
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#paymentTypes" class="sub-menu-link js-page-scrolling">
+                                                Payment Types
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#salesInvoice" class="sub-menu-link js-page-scrolling">
+                                                Sales Invoice
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#purchaseInvoice" class="sub-menu-link js-page-scrolling">
+                                                Purchase Invoice
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#invoiceTemplates" class="sub-menu-link js-page-scrolling">
+                                                Invoice Templates
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#productSettings" class="sub-menu-link js-page-scrolling">
+                                                Products
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#stockAdjustmentType" class="sub-menu-link js-page-scrolling">
+                                                Stock Adjustment Type
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#notifications" class="sub-menu-link js-page-scrolling">
+                                                Notification
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#update" class="sub-menu-link js-page-scrolling">
+                                                Update
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Development Guide-->
+                        <li class="nav-item">
+                            <a href="development-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Development Guide
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down d-none"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#languageSettings" class="sub-menu-link js-page-scrolling">
+                                        Language Settings
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#setLanguage" class="sub-menu-link js-page-scrolling">
+                                                Set Language
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#updateLanguage" class="sub-menu-link js-page-scrolling">
+                                                Update Language
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#environmentConfiguration" class="sub-menu-link js-page-scrolling">
+                                        Environment configuration
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#addNewPage" class="sub-menu-link js-page-scrolling">
+                                        Add new page
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#changeColorAndDesign" class="sub-menu-link js-page-scrolling">
+                                        Change color & design
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Change Log-->
+                        <li class="nav-item">
+                            <a href="change-log.html" class="nav-link">
+                                Change Log
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="page-content-wrapper">
+                <section>
+                    <h3>Introduction</h3>
+                    <p>
+                        <b class="font-weight-600">Gain POS</b> – Inventory and Sales Management System is the easiest way to Sale and Purchase as well as managing
+                        Stock! Create your product, add brands,categories, groups, units, variant attributes.
+                        <b class="font-weight-600">Gain POS</b> has powerful features to manage products, sales, purchase and manage inventory. Diverse reports helps to understand your business status.
+                    </p>
+                    <p>
+                        <b class="font-weight-600">Gain POS</b> is developed using Laravel 8.1, Vue.js & MySQL database.
+                        It’s easy to install and you’ll get free updates forever.
+                    </p>
+
+                    <div class="mt-5">
+                        <h4>
+                            Why Gain POS?
+                        </h4>
+                        <ul class="list-style-hash">
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Dashboard</p>
+                                <p class="text-secondary">
+                                    See all statuses of the application from dashboard and stay up to date.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Reports</p>
+                                <p class="text-secondary">
+                                    Set different types of reports automatically.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Product management</p>
+                                <p class="text-secondary">
+                                    Easily manageable products along with import and export functionality and print barcode for your products
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">POS View</p>
+                                <p class="text-secondary">
+                                    Manage Sales and Purchase with an attractive POS view.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Offline sale</p>
+                                <p class="text-secondary">
+                                    Sale offline for sudden drop of network connectivity to enjoy continuous sales experience.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Return of Products</p>
+                                <p class="text-secondary">
+                                    Manage Return products fully and partially.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Credit Sale</p>
+                                <p class="text-secondary">
+                                    Easily manageable credit sale.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Multiple Payment method</p>
+                                <p class="text-secondary">
+                                    Pay with online payments like paypal and stripe along with offline payment methods for sale.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Internal transfer</p>
+                                <p class="text-secondary">
+                                    Manage Internal transfer from branch to branch easily.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Shipment</p>
+                                <p class="text-secondary">
+                                    Shipment functionality calculated with system accounting.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Branch</p>
+                                <p class="text-secondary">
+                                    Manage multiple branch wise sales, purchase, inventory and reports
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Cash register</p>
+                                <p class="text-secondary">
+                                    Manage multiple cash registers for multiple branch
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Dynamic invoice</p>
+                                <p class="text-secondary">
+                                   Design your invoice as want.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Users & Roles</p>
+                                <p class="text-secondary">
+                                    Manage your uses with different roles and permissions.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-600 mb-0">Customers and Suppliers Information</p>
+                                <p class="text-secondary">
+                                    Store more customers and suppliers information.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <a class="js-page-scrolling back-to-top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </a>
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+        <script src="js/documentation.js" type="text/javascript"></script>
+    </body>
+</html>
+
