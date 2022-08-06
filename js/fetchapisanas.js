@@ -1,10 +1,7 @@
-
-
+//fetch data from an API
+//get sanas
 function fetchData(){
-  try{
-
-
-  fetch('https://cors.io/?{http://localhost:8000/api/getsanas}')
+  fetch('http://localhost/Rc-POS/api/sanas.php')
   .then(response => {
     if(response.ok){
       return response.json();
@@ -22,10 +19,10 @@ function fetchData(){
                   <a class="fas fa-share"></a>
                   <a class="fas fa-eye"></a>
               </div>
-              <img src="images/product-1.png" alt="">
+              <img src="adminrc/public/uploads/products/${data[i].image}" alt="${data[i].name}">
               <div class="content">
-                  <h3>${data[i].title}</h3>
-                  <div class="price">$120.99</div>
+                  <h3>${data[i].name}</h3>
+                  <div class="price">$${data[i].sell}</div>
                   <div class="stars">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -38,9 +35,16 @@ function fetchData(){
         <div class="box">
       `;
     }
-  })  }catch(err){
-    console.log(err);
-  }
+    if(data.length == 0){
+      author.innerHTML += `
+          <div class="box">
+              <div class="content">
+                  <h4>ສິນຄ້າຈະມີໄວໆນີ້...</h4>
+              </div>
+        <div class="box">
+      `;
+    }
+  })
 }
 fetchData();
 
