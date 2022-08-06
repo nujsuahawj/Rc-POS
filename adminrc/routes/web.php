@@ -5,10 +5,12 @@ use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
+
 Route::group([], function () {
     require_once(__DIR__ . '/additional/additional.php');
     require_once(__DIR__ . '/language/language.php');
     require_once(__DIR__.'/auth/auth.php');
+
 });
 Route::group(['middleware' => ['auth']], function () {
 

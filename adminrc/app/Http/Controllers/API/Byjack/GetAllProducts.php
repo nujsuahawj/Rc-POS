@@ -40,11 +40,7 @@ class GetAllProducts extends Controller
         ->where('product_variants.enabled',1)
         ->where('p.category_id',1)
         ->get();
-        if(count($data)>0){
-            return response()->json(['data'=>$data]);
-        }else{
-            return response()->json(['message'=>'ບໍ່ມີສິນຄ້າເທື່ອ']);
-        }
+        return response()->json($data);
     }
 
     /**
@@ -60,11 +56,7 @@ class GetAllProducts extends Controller
         ->where('product_variants.enabled',1)
         ->where('p.category_id',2)
         ->get();
-        if(count($data)>0){
-            return response()->json(['data'=>$data]);
-        }else{
-            return response()->json(['message'=>'ບໍ່ມີສິນຄ້າເທື່ອ']);
-        }
+        return response()->json($data);
     }
 
     /**
@@ -81,11 +73,7 @@ class GetAllProducts extends Controller
         ->where('product_variants.enabled',1)
         ->where('p.category_id',3)
         ->get();
-        if(count($data)>0){
-            return response()->json(['data'=>$data]);
-        }else{
-            return response()->json(['message'=>'ບໍ່ມີສິນຄ້າເທື່ອ']);
-        }
+        return response()->json($data);
     }
 
     /**
