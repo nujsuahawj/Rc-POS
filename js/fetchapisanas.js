@@ -30,7 +30,7 @@ function fetchData(){
                       <i class="fas fa-star"></i>
                       <i class="far fa-star"></i>
                   </div>
-                  <a href="#" class="btn">ຊື້ເລີຍ</a>
+                  <a href="https://wa.me/8562078914908?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້${data[i].name} ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້." class="btn">ຊື້ເລີຍ</a>
           </div>
         <div class="box">
       `;
