@@ -144,7 +144,7 @@ header .icons a:hover{
 
 .home .slide-container .slide .image .shoe{
   width:100%;
-  transform: rotate(-35deg);
+  transform: rotate(-0deg);
   animation:shoe .3s linear;
 }
 
@@ -294,8 +294,8 @@ header .icons a:hover{
 }
 
 .products .box-container .box img{
-  height:10rem;
-  transform: rotate(-35deg);
+  height:15rem;
+  transform: rotate(-0deg);
   filter:drop-shadow(0 .5rem 1rem rgba(0,0,0,.1));
   margin:8rem 2rem;
 }
@@ -387,7 +387,7 @@ header .icons a:hover{
 }
 
 .featured .row .image-container .big-image{
-  width:80%;
+  width:75%;
   padding:1rem;
 }
 
