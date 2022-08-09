@@ -16,12 +16,12 @@ function fetchDataNoghog(){
         <div class="row">
             <div class="image-container">
                 <div class="small-image">
-                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="${data[i].name}" class="featured-image-1" >
-                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="${data[i].name}" class="featured-image-1" >
-                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="${data[i].name}" class="featured-image-1" >
+                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="rchmong" class="featured-image-1" >
+                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="rchmong" class="featured-image-1" >
+                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="rchmong" class="featured-image-1" >
                 </div>
                 <div class="big-image">
-                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="${data[i].name}" class="big-image-1">
+                    <img src="adminrc/public/uploads/products/${data[i].image}" alt="rchmong" class="big-image-1">
                 </div>
             </div>
             <div class="content">

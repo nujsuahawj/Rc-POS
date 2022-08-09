@@ -19,7 +19,7 @@ function fetchDataSanas(){
                   <a class="fas fa-share"></a>
                   <a class="fas fa-eye"></a>
               </div>
-              <img src="adminrc/public/uploads/products/${data[i].image}" alt="${data[i].name}">
+              <img src="adminrc/public/uploads/products/${data[i].image}" alt="rchmong">
               <div class="content">
                   <h3>${data[i].name}</h3>
                   <div class="price">$${data[i].sell}</div>
