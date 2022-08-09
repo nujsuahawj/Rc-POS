@@ -1,7 +1,7 @@
 //fetch data from an API
 //get noghog
-function fetchData(){
-    fetch('http://localhost/Rc-POS/api/noghog.php')
+function fetchDataNoghog(){
+    fetch('https://rchmong.com/api/noghog.php')
     .then(response => {
       if(response.ok){
         return response.json();
@@ -34,23 +34,23 @@ function fetchData(){
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price">$${data[i].sell}</div>
-                <a href="https://wa.me/8562078914908?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້${data[i].name} ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້." class="btn">ຊື້ເລີຍ</a>
+                <a href="https://wa.me/8562058782577?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້ສິນຄ້າ %28${data[i].name}%29 ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້." class="btn">ຊື້ເລີຍ</a>
             </div>
             </div>
         `;
       }
       if(data.length == 0){
-        author.innerHTML += `
-            <div class="box">
-                <div class="content">
-                    <h4>ສິນຄ້າຈະມີໄວໆນີ້...</h4>
-                </div>
-          <div class="box">
+        noghog.innerHTML += `
+          <div class="row">
+              <div class="content">
+                  <h4 style="text-align: center;">ສິນຄ້າຈະມີໄວໆນີ້...</h4>
+              </div>
+          </div>
         `;
       }
     })
   }
-  fetchData();
+  fetchDataNoghog();
   
   
   

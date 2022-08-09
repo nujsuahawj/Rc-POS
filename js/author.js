@@ -1,7 +1,7 @@
 //fetch data from an API
 //get sanas
-function fetchData(){
-    fetch('http://localhost/Rc-POS/api/author.php')
+function fetchDataAuthor(){
+    fetch('https://rchmong.com/api/author.php')
     .then(response => {
       if(response.ok){
         return response.json();
@@ -30,7 +30,7 @@ function fetchData(){
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <a href="https://wa.me/8562078914908?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້${data[i].name} ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້." class="btn">ຊື້ເລີຍ</a>
+                    <a href="https://wa.me/8562058782577?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້ສິນຄ້າ %28${data[i].name}%29 ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້." class="btn">ຊື້ເລີຍ</a>
             </div>
           <div class="box">
         `;
@@ -46,6 +46,6 @@ function fetchData(){
       }
     })
   }
-  fetchData();
+  fetchDataAuthor();
 
     
