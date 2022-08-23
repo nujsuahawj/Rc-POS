@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^index?$ index.php
+RewriteRule ^contact?$ contact.php
+RewriteRule ^footer?$ footer.php
+RewriteRule ^header?$ header.php
+RewriteRule ^promotions?$ promotions.php
+RewriteRule ^db?$ db.php
