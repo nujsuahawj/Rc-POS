@@ -65,7 +65,7 @@
                         <h6>ໜ້າຫຼັກ / ລາຍລະອຽດສິນຄ້າ</h6>
                         <h4><?php echo $row["name"] ?></h4>
                         <h2>ລາຄາ<?php echo $row["sell"] ?>₭</h2>
-                        <button class="btn-normal"><a href="#">ຊື້ເລີຍ</a></button>
+                        <button class="btn-normal"><a href="https://wa.me/8562058782577?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້ສິນຄ້າ %28$<?php echo $row["name"] ?> ລາຄາ <?php echo $row["sell"] ?>%29 ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້.">ຊື້ເລີຍ</a></button>
                         <h4>ລາຍລະອຽດ</h4>
                         <span>
                             <?php echo $row["details"] ?>
