@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rc Hmong | ກ່ຽວກັບພວກເຮົາ</title>
+    <title>Rc Hmong | contact</title>
     <meta name="rchmong" conten="Rc Hmong">
     <meta name="jacksainther" content="nujsuahawj">
     <meta name="rchmong" content="Rc Hmong, Yog tab laj rau peb hmoob txuas tus, ຮ້ານ Rc Hmong ຂາຍທຖກຢ່າງ" />

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rc Hmong | ສິນຄ້າທັງໝົດ</title>
+    <title>Rc Hmong | products</title>
     <meta name="rchmong" conten="Rc Hmong">
     <meta name="jacksainther" content="nujsuahawj">
     <meta name="rchmong" content="Rc Hmong, Yog tab laj rau peb hmoob txuas tus, ຮ້ານ Rc Hmong ຂາຍທຖກຢ່າງ" />
@@ -75,7 +75,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <h6><span class="old-prc"><?php echo floor($row["sell"]. 0); ?>₭</span></h6>
+                                        <h4><?php echo floor($row["sell"]. 0); ?>₭</h4>
                                     </div>
                                     <a href="./single-products.php?product_id=<?php echo $row["id"]; ?>" class="go-to-cart"><i class="uil uil-shopping-bag shopping-cart cart"></i></a>
                                 </div>
@@ -107,7 +107,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <h6><span class="old-prc"><?php echo floor($row1["sell"]. 0); ?>₭</span></h6>
+                                        <h4><?php echo floor($row1["sell"]. 0); ?>₭</h4>
                                     </div>
                                     <a href="./single-products.php?product_id=<?php echo $row1["id"]; ?>" class="go-to-cart"><i class="uil uil-shopping-bag shopping-cart cart"></i></a>
                                 </div>

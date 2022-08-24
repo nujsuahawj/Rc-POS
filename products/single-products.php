@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rc Hmong | ລາຍລະອຽດສິນຄ້າ</title>
+    <title>Rc Hmong | products details</title>
     <meta name="rchmong" conten="Rc Hmong">
     <meta name="jacksainther" content="nujsuahawj">
     <meta name="rchmong" content="Rc Hmong, Yog tab laj rau peb hmoob txuas tus, ຮ້ານ Rc Hmong ຂາຍທຖກຢ່າງ" />
@@ -65,7 +65,7 @@
                         <h6>ໜ້າຫຼັກ / ລາຍລະອຽດສິນຄ້າ</h6>
                         <h4><?php echo $row["name"] ?></h4>
                         <h2>ລາຄາ<?php echo $row["sell"] ?>₭</h2>
-                        <button class="btn-normal"><a href="https://wa.me/8562058782577?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້ສິນຄ້າ %28$<?php echo $row["name"] ?> ລາຄາ <?php echo $row["sell"] ?>%29 ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້.">ຊື້ເລີຍ</a></button>
+                        <button class="btn-normal"><a href="https://wa.me/8562058782577?text=ສະບາຍດີອ້າຍRc ຂ້ອຍຕ້ອງການສັ່ງຊື້ສິນຄ້າ %28$<?php echo $row["name"] ?> ລາຄາ: <?php echo $row["sell"] ?>%29 ຂ້ອຍຈະໂອນເງິນເຂົ້າບັນຊີຂອງເຈົ້າແລະແຈ້ງສະຖານທີສົ່ງລາຍລະອຽດໃຫ້ເດີ້.">ຊື້ເລີຍ</a></button>
                         <h4>ລາຍລະອຽດ</h4>
                         <span>
                             <?php echo $row["details"] ?>
