@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rc Hmong | Rc Shop</title>
+    <title>Rc Hmong | Rc Online Store</title>
     <meta name="rchmong" conten="Rc Hmong">
     <meta name="jacksainther" content="nujsuahawj">
     <meta name="rchmong" content="Rc Hmong, Yog tab laj rau peb hmoob txuas tus, ຮ້ານ Rc Hmong ຂາຍທຖກຢ່າງ" />
@@ -18,13 +18,13 @@
 </head>
 <body>
 
-    <div class="page-loader loader">
+    <!-- <div class="page-loader loader">
         <div class="cmps">
             <span class="mt-4 mx-auto d-block text-center">
                 ກຳລັງໂຫຼດ<b></b><b></b><b></b>
             </span>
         </div>
-    </div>
+    </div> -->
 
     <?php require_once 'header.php';?>
 
