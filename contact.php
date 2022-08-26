@@ -110,7 +110,7 @@
                             </p>
                         </div>
                         <div>
-                            <img src="./assets/img/favicon.png" alt="Ora">
+                            <img src="./assets/img/about/cv.jpg" alt="jacksainther">
                             <p>
                                 <span>Jack Sainther</span> Ceo-Founde <br> 
                                 Phone: +856 2091826096 <br>
@@ -118,7 +118,7 @@
                             </p>
                         </div>
                         <div>
-                            <img src="./assets/img/favicon.png" alt="Ora">
+                            <img src="./assets/img/about/cv1.jpg" alt="nujsua">
                             <p>
                                 <span>nujsua</span> Organisatory <br> 
                                 Phone: +856 2078914908 <br>
