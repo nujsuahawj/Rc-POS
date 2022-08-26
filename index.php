@@ -18,13 +18,13 @@
 </head>
 <body>
 
-    <!-- <div class="page-loader loader">
+    <div class="page-loader loader">
         <div class="cmps">
             <span class="mt-4 mx-auto d-block text-center">
                 ກຳລັງໂຫຼດ<b></b><b></b><b></b>
             </span>
         </div>
-    </div> -->
+    </div>
 
     <?php require_once 'header.php';?>
 
@@ -319,7 +319,11 @@
 
     <?php require_once 'footer.php';?>
 
+    <canvas id="my-canvas"></canvas>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/confetti.min.js"></script>
+    <script src="./assets/js/confetti.js"></script>
 </body>
 </html>
