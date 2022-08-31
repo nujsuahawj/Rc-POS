@@ -26,7 +26,11 @@
         </div>
     </div>
 
-    <?php require_once 'header.php';?>
+    <header class="header">
+        <div class="container">
+            <?php require_once 'header.php';?>
+        </div>
+    </header><!-- header-end ./ -->
 
     <main class="wrapper">
         <section class="carousel">

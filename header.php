@@ -1,5 +1,5 @@
-<header class="header">
-        <div class="container">
+<!-- <header class="header">
+        <div class="container"> -->
             <section class="header--main">
                 <div class="mobile-menu">
                     <input id="menu__toggle" class="open-nav" type="checkbox" />
@@ -62,5 +62,5 @@
                 </div>
             </section>
             <div class="progress"></div>
-        </div>
-</header><!-- header-end ./ -->
+        <!-- </div>
+</header> -->
